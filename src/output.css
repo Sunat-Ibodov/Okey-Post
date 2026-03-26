@@ -185,6 +185,9 @@
   .mt-1 {
     margin-top: calc(var(--spacing) * 1);
   }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
   .mt-3 {
     margin-top: calc(var(--spacing) * 3);
   }
@@ -275,6 +278,9 @@
   .h-\[74px\] {
     height: 74px;
   }
+  .h-\[140px\] {
+    height: 140px;
+  }
   .h-\[260px\] {
     height: 260px;
   }
@@ -338,6 +344,9 @@
   .w-\[74px\] {
     width: 74px;
   }
+  .w-\[84px\] {
+    width: 84px;
+  }
   .w-\[260px\] {
     width: 260px;
   }
@@ -362,6 +371,9 @@
   .max-w-\[240px\] {
     max-width: 240px;
   }
+  .max-w-\[280px\] {
+    max-width: 280px;
+  }
   .max-w-\[320px\] {
     max-width: 320px;
   }
@@ -382,6 +394,9 @@
   }
   .min-w-\[260px\] {
     min-width: 260px;
+  }
+  .flex-1 {
+    flex: 1;
   }
   .flex-shrink {
     flex-shrink: 1;
@@ -424,6 +439,9 @@
   }
   .justify-center {
     justify-content: center;
+  }
+  .gap-1 {
+    gap: calc(var(--spacing) * 1);
   }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
@@ -764,6 +782,16 @@
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
+  .sm\:h-\[160px\] {
+    @media (width >= 40rem) {
+      height: 160px;
+    }
+  }
+  .sm\:w-\[140px\] {
+    @media (width >= 40rem) {
+      width: 140px;
+    }
+  }
   .sm\:grid-cols-2 {
     @media (width >= 40rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -772,6 +800,11 @@
   .sm\:grid-cols-3 {
     @media (width >= 40rem) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .sm\:flex-row {
+    @media (width >= 40rem) {
+      flex-direction: row;
     }
   }
   .sm\:gap-5 {
@@ -802,6 +835,11 @@
   .md\:flex {
     @media (width >= 48rem) {
       display: flex;
+    }
+  }
+  .md\:grid-cols-2 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
   .lg\:order-none {
@@ -882,6 +920,11 @@
   .lg\:w-auto {
     @media (width >= 64rem) {
       width: auto;
+    }
+  }
+  .lg\:max-w-\[360px\] {
+    @media (width >= 64rem) {
+      max-width: 360px;
     }
   }
   .lg\:max-w-\[420px\] {
@@ -1034,6 +1077,11 @@
       font-size: 16px;
     }
   }
+  .lg\:text-\[18px\] {
+    @media (width >= 64rem) {
+      font-size: 18px;
+    }
+  }
   .lg\:text-\[20px\] {
     @media (width >= 64rem) {
       font-size: 20px;
@@ -1057,6 +1105,11 @@
   .lg\:text-\[36px\] {
     @media (width >= 64rem) {
       font-size: 36px;
+    }
+  }
+  .lg\:text-\[46px\] {
+    @media (width >= 64rem) {
+      font-size: 46px;
     }
   }
   .lg\:text-\[48px\] {
